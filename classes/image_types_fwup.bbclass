@@ -6,7 +6,7 @@ inherit image-artifact-names
 # the use of a wks template to avoid the user the needed of
 # providing one. It adds a small build time overhead but decreases
 # the complexity and maintainability.
-WKS_FILE = "sdimage-template.wks"
+WKS_FILE ?= "sdimage-template.wks"
 
 IMAGE_INSTALL:append = " fwup"
 
